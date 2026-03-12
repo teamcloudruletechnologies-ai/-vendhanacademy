@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        font-family: 'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif;
+    }
+}
+
+@layer utilities {
+    @keyframes shine {
+        0% {
+            left: -100%;
+        }
+
+        100% {
+            left: 125%;
+        }
+    }
+}
