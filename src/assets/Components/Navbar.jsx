@@ -14,7 +14,7 @@ const NAV_LINKS = [
     { name: 'Home', path: '/', icon: Home, color: '#DC2626' },
     { name: 'About Us', path: '/about', icon: Users, color: '#2563EB' },
     { name: 'Service', path: '/service', hasDropdown: true, icon: GraduationCap, color: '#059669' },
-    { name: 'Achievers', path: '#', icon: Award, color: '#D97706' },
+    { name: 'Achievers', path: '/achievers', icon: Award, color: '#D97706' },
     { name: 'Study Materials', path: '/studymaterial', icon: BookOpen, color: '#7C3AED' },
     { name: 'Contact Us', path: '/contact', icon: MessageCircle, color: '#0891B2' },
 ];

@@ -1,43 +1,35 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Award, Users, Shield, BookOpen } from 'lucide-react';
-import ArchieverImg from '../Images/Demo-Archiever.jpg';
+import nivethithaImg from '../Archivers Images/Nivethitha.png';
+import pandiyanImg from '../Archivers Images/Pandiyan.png';
+import shekAbdullahImg from '../Archivers Images/Shek Abdullah.png';
+import vivekaImg from '../Archivers Images/Viveka.png';
 
 const achievers = [
     {
-        name: 'ISAC NEWTON J',
+        name: 'Nivethitha',
         exam: 'Civilisation',
         year: '2024',
-        image: ArchieverImg,
+        image: nivethithaImg,
     },
     {
-        name: 'SUJITHA',
+        name: 'Pandiyan',
         exam: 'Civilisation',
         year: '2023',
-        image: ArchieverImg,
+        image: pandiyanImg,
     },
     {
-        name: 'PRAVEEN',
+        name: 'Shek Abdullah',
         exam: 'Civilisation',
         year: '2022',
-        image: ArchieverImg,
+        image: shekAbdullahImg,
     },
     {
-        name: 'SAILESH',
+        name: 'viveka',
         exam: 'Civilisation',
         year: '2021',
-        image: ArchieverImg,
-    },
-    {
-        name: 'PRAKALYA',
-        exam: 'Civilisation',
-        year: '2020',
-        image: ArchieverImg,
-    },
-    {
-        name: 'VIJI KANNAN',
-        exam: 'Civilisation',
-        year: '2019',
-        image: ArchieverImg,
+        image: vivekaImg,
     },
 ];
 
@@ -109,6 +101,7 @@ const StatCard = ({ stat, startCounting }) => {
 };
 
 const Archievers = () => {
+    const navigate = useNavigate();
     const [startCounting, setStartCounting] = useState(false);
     const statsRef = useRef(null);
 
@@ -197,7 +190,9 @@ const Archievers = () => {
 
                 {/* View All Button */}
                 <div className="mt-10 md:mt-14 flex justify-center">
-                    <button className="px-8 py-2.5 border-2 border-black-900 text-black-900 font-semibold rounded hover:bg-red-500 hover:text-white transition-all duration-300 text-sm sm:text-base">
+                    <button 
+                        onClick={() => navigate('/achievers')}
+                        className="px-8 py-2.5 border-2 border-black-900 text-black-900 font-semibold rounded hover:bg-red-500 hover:text-white transition-all duration-300 text-sm sm:text-base">
                         View All
                     </button>
                 </div>

@@ -16,6 +16,7 @@ import UpscMaterial from './assets/Components/MaterialPages/UpscMaterial';
 import TnpsMaterial from './assets/Components/MaterialPages/TnpsMaterial';
 import RrbMaterial from './assets/Components/MaterialPages/RrbMaterial';
 import BankingMaterial from './assets/Components/MaterialPages/BankingMaterial';
+import AchieversPage from './assets/Pages/AchieversPage';
 
 export default function App() {
     return (
@@ -36,6 +37,7 @@ export default function App() {
                 <Route path="/tnpsc-material" element={<TnpsMaterial />} />
                 <Route path="/rrb-material" element={<RrbMaterial />} />
                 <Route path="/banking-material" element={<BankingMaterial />} />
+                <Route path="/achievers" element={<AchieversPage />} />
             </Routes>
             <FloatingButtons />
         </Router>
