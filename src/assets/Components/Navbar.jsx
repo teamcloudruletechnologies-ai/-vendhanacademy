@@ -89,8 +89,8 @@ const Navbar = () => {
 
                         {/* ── Logo ── */}
                         <a href="#" className="flex-1 xl:flex-none flex items-center justify-center xl:justify-start cursor-pointer gap-3">
-                            <div className="relative overflow-hidden rounded-xl bg-white p-1 shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300">
-                                <img src={logo} alt="Vendhan Academy Logo" className="h-11 sm:h-12 lg:h-13 w-auto object-contain" />
+                            <div className="relative flex items-center justify-center">
+                                <img src={logo} alt="Vendhan Academy Logo" className="h-14 sm:h-16 lg:h-[72px] w-auto object-contain mix-blend-multiply scale-110 origin-left" />
                             </div>
                             <div className="flex items-center gap-1.5">
                                 <span className="font-black text-lg sm:text-xl lg:text-2xl tracking-wider leading-none text-red-600" style={COOPER_FONT}>VENDHAN</span>

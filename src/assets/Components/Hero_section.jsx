@@ -43,7 +43,7 @@ const HeroSection = () => {
             <div className="absolute top-1/2 left-0 w-[500px] h-[500px] -translate-y-1/2 -translate-x-1/2 rounded-full bg-red-50/40 blur-3xl"></div>
 
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="flex flex-col lg:flex-row items-center pt-12 pb-6 md:pt-20 md:pb-8 lg:pt-24 lg:pb-10 lg:gap-16">
+                <div className="flex flex-col lg:flex-row items-center pt-24 pb-6 md:pt-32 md:pb-8 lg:pt-36 lg:pb-10 lg:gap-16">
 
                     {/* Left Side: Image */}
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-start mb-10 lg:mb-0">
