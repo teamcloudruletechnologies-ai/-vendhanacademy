@@ -1,20 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://vendhanias.com/</loc>
   </url>
-
   <url>
     <loc>https://vendhanias.com/about</loc>
   </url>
-
   <url>
-    <loc>https://vendhanias.com/services</loc>
+    <loc>https://vendhanias.com/service</loc>
   </url>
-
+  <url>
+    <loc>https://vendhanias.com/studymaterial</loc>
+  </url>
   <url>
     <loc>https://vendhanias.com/contact</loc>
   </url>
-
+  <url>
+    <loc>https://vendhanias.com/achievers</loc>
+  </url>
+  <url>
+    <loc>https://vendhanias.com/tnpsc</loc>
+  </url>
+  <url>
+    <loc>https://vendhanias.com/upsc</loc>
+  </url>
+  <url>
+    <loc>https://vendhanias.com/rrb</loc>
+  </url>
+  <url>
+    <loc>https://vendhanias.com/banking</loc>
+  </url>
+  <url>
+    <loc>https://vendhanias.com/tnsurb</loc>
+  </url>
+  <url>
+    <loc>https://vendhanias.com/tnpsc-material</loc>
+  </url>
+  <url>
+    <loc>https://vendhanias.com/upsc-material</loc>
+  </url>
+  <url>
+    <loc>https://vendhanias.com/rrb-material</loc>
+  </url>
+  <url>
+    <loc>https://vendhanias.com/banking-material</loc>
+  </url>
+  <url>
+    <loc>https://vendhanias.com/tnsurb-material</loc>
+  </url>
 </urlset>
