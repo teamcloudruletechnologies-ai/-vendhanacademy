@@ -9,26 +9,26 @@ import vivekaImg from '../Archivers Images/Viveka.png';
 const achievers = [
     {
         name: 'Nivethitha',
-        exam: 'Civilisation',
-        year: '2024',
+        
+        
         image: nivethithaImg,
     },
     {
         name: 'Pandiyan',
-        exam: 'Civilisation',
-        year: '2023',
+        
+        
         image: pandiyanImg,
     },
     {
         name: 'Shek Abdullah',
-        exam: 'Civilisation',
-        year: '2022',
+       
+       
         image: shekAbdullahImg,
     },
     {
         name: 'viveka',
-        exam: 'Civilisation',
-        year: '2021',
+        
+       
         image: vivekaImg,
     },
 ];

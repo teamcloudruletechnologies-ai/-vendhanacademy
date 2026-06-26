@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './assets/Pages/Home';
 import AboutUs from './assets/Pages/AboutUs';
@@ -19,6 +19,38 @@ import BankingMaterial from './assets/Components/MaterialPages/BankingMaterial';
 import AchieversPage from './assets/Pages/AchieversPage';
 
 export default function App() {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 3000);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (isLoading) {
+        return (
+            <div className="fixed inset-0 flex flex-col items-center justify-center bg-white z-[99999]">
+                <div className="relative flex items-center justify-center">
+                    {/* Animated rotating loading circle */}
+                    <div className="w-36 h-36 border-4 border-gray-100 border-t-red-600 rounded-full animate-spin"></div>
+                    {/* Logo inside the circle */}
+                    <img 
+                        src="/favicon.jpeg" 
+                        alt="Vendhan Academy Logo" 
+                        className="absolute w-24 h-24 rounded-full object-cover shadow-md"
+                    />
+                </div>
+                <h2 className="mt-6 text-xl font-bold text-gray-800 tracking-wider animate-pulse" style={{ fontFamily: "sans-serif" }}>
+                    VENDHAN ACADEMY
+                </h2>
+                <p className="mt-2 text-xs text-gray-400 font-semibold tracking-widest uppercase">
+                    Shaping Future Leaders
+                </p>
+            </div>
+        );
+    }
+
     return (
         <Router>
             <Routes>
