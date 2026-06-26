@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { BookOpen, Clock } from 'lucide-react';
@@ -9,6 +10,18 @@ const BROWN = 'rgb(150, 75, 0)';
 const TnsurbMaterial = () => {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>TNSURB Police Exam Study Materials | Vendhan Academy</title>
+                <meta name="description" content="Download free study material, model questions, syllabus guides, and previous years question papers for TNSURB SI and Police Constable exams." />
+                <meta name="keywords" content="TNSURB study material, Police exam notes, SI study guides free download, PC exam material" />
+                <link rel="canonical" href="https://vendhanacademy.com/tnsurb-material" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/tnsurb-material" />
+                <meta property="og:title" content="TNSURB Police Exam Study Materials | Vendhan Academy" />
+                <meta property="og:description" content="Free study guides, reference booklets, and sample test question papers for TNSURB SI and PC aspirants." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* Hero Banner */}

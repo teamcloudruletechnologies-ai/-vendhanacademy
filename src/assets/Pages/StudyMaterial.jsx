@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { BookOpen, Landmark, Building2, FileText, Train, ShieldCheck } from 'lucide-react';
@@ -15,6 +16,18 @@ const courses = [
 const StudyMaterial = () => {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>Free Study Materials for UPSC, TNPSC & Banking | Vendhan Academy</title>
+                <meta name="description" content="Access structured study materials, syllabus copies, previous year question papers, and study guides for TNPSC, UPSC, RRB, Banking, and TNSURB exams." />
+                <meta name="keywords" content="TNPSC study material, UPSC study guide, banking exam materials free, RRB books, TNSURB exams prep, free exam downloads" />
+                <link rel="canonical" href="https://vendhanacademy.com/studymaterial" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/studymaterial" />
+                <meta property="og:title" content="Free Study Materials for UPSC, TNPSC & Banking | Vendhan Academy" />
+                <meta property="og:description" content="Prepare efficiently with comprehensive notes and reference guides prepared by expert faculties at Vendhan Academy." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* Hero Banner */}

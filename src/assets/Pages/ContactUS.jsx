@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
@@ -74,6 +75,18 @@ const ContactUS = () => {
 
     return (
         <div className="min-h-screen bg-white flex flex-col font-sans">
+            <Helmet>
+                <title>Contact Us | Vendhan Academy Madurai</title>
+                <meta name="description" content="Get in touch with Vendhan Academy in Madurai, Tamil Nadu. Reach out for enrollment queries, program details, schedules for UPSC, TNPSC, and Banking batches." />
+                <meta name="keywords" content="contact Vendhan Academy, IAS academy phone number, Madurai coaching center address, government exam guidance contact" />
+                <link rel="canonical" href="https://vendhanacademy.com/contact" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/contact" />
+                <meta property="og:title" content="Contact Us | Vendhan Academy Madurai" />
+                <meta property="og:description" content="Have questions about our civil service, banking, or police exam courses? Send us a message or visit our campus in KK Nagar, Madurai." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* Hero Headline Section */}

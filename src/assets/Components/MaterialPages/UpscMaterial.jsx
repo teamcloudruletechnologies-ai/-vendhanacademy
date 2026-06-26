@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { BookOpen, Download, ExternalLink } from 'lucide-react';
@@ -16,6 +17,18 @@ const UpscMaterial = () => {
 
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>UPSC IAS Study Materials & PDFs | Vendhan Academy</title>
+                <meta name="description" content="Download free UPSC civil services prelims and mains study materials, previous year question papers, general studies PDFs, and exam guides." />
+                <meta name="keywords" content="UPSC IAS study materials pdf, civil service exam preparation notes, UPSC mains papers, download prelims GS papers" />
+                <link rel="canonical" href="https://vendhanacademy.com/upsc-material" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/upsc-material" />
+                <meta property="og:title" content="UPSC IAS Study Materials & PDFs | Vendhan Academy" />
+                <meta property="og:description" content="Access and download high-quality General Studies and previous year UPSC papers compiled by Vendhan Academy." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* Hero Banner */}

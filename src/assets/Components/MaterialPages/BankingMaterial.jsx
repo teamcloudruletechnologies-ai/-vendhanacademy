@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { BookOpen, Clock } from 'lucide-react';
@@ -9,6 +10,18 @@ const GREY = 'rgb(128, 128, 128)';
 const BankingMaterial = () => {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>Banking Exam Study Materials & PDF | Vendhan Academy</title>
+                <meta name="description" content="Download free study resources, syllabus layouts, practice question sets, and quant/reasoning shortcut guides for IBPS PO, IBPS Clerk, SBI PO, and SBI Clerk exams." />
+                <meta name="keywords" content="Banking exam study material pdf, SBI PO syllabus downloads, bank clerk notes, quant shortcut tricks" />
+                <link rel="canonical" href="https://vendhanacademy.com/banking-material" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/banking-material" />
+                <meta property="og:title" content="Banking Exam Study Materials & PDF | Vendhan Academy" />
+                <meta property="og:description" content="Prepare for IBPS and SBI banking recruitment tests with free study guides and practice syllabus papers." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* Hero Banner */}

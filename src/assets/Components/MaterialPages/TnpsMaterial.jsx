@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { BookOpen, Download } from 'lucide-react';
@@ -20,6 +21,18 @@ const materials = [
 const TnpsMaterial = () => {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>TNPSC Syllabus & Question Papers PDF | Vendhan Academy</title>
+                <meta name="description" content="Download free TNPSC Group 1, Group 2, and Group 4 prelims and mains syllabus guides, and previous years question papers (2025) in PDF format." />
+                <meta name="keywords" content="TNPSC Group 1 syllabus pdf, TNPSC Group 4 question papers, TNPSC Group 2 exam pattern, download TNPSC study notes" />
+                <link rel="canonical" href="https://vendhanacademy.com/tnpsc-material" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/tnpsc-material" />
+                <meta property="og:title" content="TNPSC Syllabus & Question Papers PDF | Vendhan Academy" />
+                <meta property="og:description" content="Free downloads of TNPSC Group I, II, IIA, and IV exam syllabus guides and 2025 question papers." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* Hero Banner */}

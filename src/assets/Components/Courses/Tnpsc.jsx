@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { GraduationCap } from 'lucide-react';
@@ -18,6 +19,18 @@ const Tnpsc = () => {
     const [activeTab, setActiveTab] = useState('group1');
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>TNPSC Group 1, 2, 4 Coaching in Madurai | Vendhan Academy</title>
+                <meta name="description" content="Get complete details on TNPSC Group I, Group II & IIA, and Group IV examination preparation at Vendhan Academy. Expert faculty, updated study material, and mock test series." />
+                <meta name="keywords" content="TNPSC Group 1, TNPSC Group 2, TNPSC Group 4, TNPSC coaching Madurai, Tamil Nadu public service commission exams training" />
+                <link rel="canonical" href="https://vendhanacademy.com/tnpsc" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/tnpsc" />
+                <meta property="og:title" content="TNPSC Group 1, 2, 4 Coaching in Madurai | Vendhan Academy" />
+                <meta property="og:description" content="Prepare for TNPSC Group 1, 2, 4 exams with structured classroom learning and mock test series at Vendhan Academy." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* ── Hero Banner ── */}

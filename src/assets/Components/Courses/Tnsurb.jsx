@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { GraduationCap } from 'lucide-react';
@@ -9,6 +10,18 @@ const BROWN = 'rgb(150, 75, 0)';
 const Tnsurb = () => {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>TNSURB Grade II Police Constable & SI Coaching | Vendhan Academy</title>
+                <meta name="description" content="Get expert coaching for TNSURB SI (Sub Inspector), Grade II Police Constable (PC), Jail Warder, and Firemen exams in Madurai. Check physical requirements, syllabus, and pattern." />
+                <meta name="keywords" content="TNSURB coaching Madurai, Sub Inspector training, Police Constable exam prep, Tamil Nadu police exams, PC SI training" />
+                <link rel="canonical" href="https://vendhanacademy.com/tnsurb" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/tnsurb" />
+                <meta property="og:title" content="TNSURB Grade II Police Constable & SI Coaching | Vendhan Academy" />
+                <meta property="og:description" content="Prepare for TNSURB Sub Inspector (SI) and Police Constable (PC) examinations with focused classroom coaching." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* ── Hero Banner ── */}

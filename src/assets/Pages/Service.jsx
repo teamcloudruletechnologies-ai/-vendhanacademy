@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { GraduationCap, Building2, Landmark, ShieldCheck, Train, FileText, BookOpen, ArrowRight } from 'lucide-react';
@@ -57,6 +58,18 @@ const COURSES = [
 const Service = () => {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>Our Coaching Services | Vendhan Academy Madurai</title>
+                <meta name="description" content="Explore coaching programs offered by Vendhan Academy. Comprehensive classroom preparation classes for TNPSC Group 1/2/4, UPSC Civil Services, Banking, RRB, and TNSURB exams." />
+                <meta name="keywords" content="TNPSC coaching, UPSC preparation, Banking exam classes, RRB coaching Madurai, TNSURB police exam training, government exams courses" />
+                <link rel="canonical" href="https://vendhanacademy.com/service" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/service" />
+                <meta property="og:title" content="Our Coaching Services | Vendhan Academy Madurai" />
+                <meta property="og:description" content="Discover professional coaching for TNPSC, UPSC, RRB, TNSURB, and Banking exams with classroom-oriented structured programs." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* Hero Banner */}

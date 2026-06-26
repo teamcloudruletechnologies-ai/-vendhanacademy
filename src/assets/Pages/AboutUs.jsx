@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import logo from '../Images/Vendan logo.jpeg';
@@ -7,6 +8,18 @@ import banner from '../Images/vendhan banner.jpeg';
 const AboutUs = () => {
     return (
         <div className="min-h-screen bg-white flex flex-col font-sans">
+            <Helmet>
+                <title>About Vendhan Academy | Best Civil Services Coaching Institute</title>
+                <meta name="description" content="Learn about Vendhan Academy's vision, mission, and dedication to guiding competitive examination aspirants in Madurai. Discover our approach to UPSC, TNPSC, Banking, RRB, and TNSURB." />
+                <meta name="keywords" content="about Vendhan Academy, IAS academy vision, government exam guidance, best academy in Madurai, educational institute mission" />
+                <link rel="canonical" href="https://vendhanacademy.com/about" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/about" />
+                <meta property="og:title" content="About Vendhan Academy | Best Civil Services Coaching Institute" />
+                <meta property="og:description" content="Our vision is to create future administrators who are socially responsible, ethically grounded, and nationally committed. Read about our mission and values." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* About Section */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { GraduationCap } from 'lucide-react';
@@ -9,6 +10,18 @@ const GOLD = '#da9100';
 const Rrb = () => {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>RRB Coaching in Madurai | Railway Recruitment Board | Vendhan Academy</title>
+                <meta name="description" content="Clear RRB NTPC, Group D, ALP, & JE exams with specialized coaching at Vendhan Academy. Get comprehensive coverage of exam pattern, stages, eligibility, and preparation strategy." />
+                <meta name="keywords" content="RRB coaching Madurai, Railway recruitment board preparation, RRB NTPC exam, RRB Group D coaching, Railway exam institute" />
+                <link rel="canonical" href="https://vendhanacademy.com/rrb" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/rrb" />
+                <meta property="og:title" content="RRB Coaching in Madurai | Railway Recruitment Board | Vendhan Academy" />
+                <meta property="og:description" content="Expert preparation guidelines and syllabus overview for RRB NTPC, ALP, JE and Group D exams at Vendhan Academy." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* ── Hero Banner ── */}

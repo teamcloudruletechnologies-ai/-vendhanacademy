@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { GraduationCap } from 'lucide-react';
@@ -9,6 +10,18 @@ const GREY = '#696969';
 const Banking = () => {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>Banking Exam Coaching in Madurai | IBPS, SBI, RBI | Vendhan Academy</title>
+                <meta name="description" content="Join Vendhan Academy for premier IBPS PO, Clerk, SBI PO, Clerk, and RBI exam coaching in Madurai. Complete syllabus coverage, short tricks for quant & reasoning, and mock test series." />
+                <meta name="keywords" content="Banking exam coaching Madurai, IBPS PO Clerk classes, SBI PO training, bank exam preparation, RBI assistant coaching" />
+                <link rel="canonical" href="https://vendhanacademy.com/banking" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/banking" />
+                <meta property="og:title" content="Banking Exam Coaching in Madurai | IBPS, SBI, RBI | Vendhan Academy" />
+                <meta property="og:description" content="Ace banking competitive examinations (SBI, IBPS, RBI) with targeted training and extensive mock test practices." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* ── Hero Banner ── */}

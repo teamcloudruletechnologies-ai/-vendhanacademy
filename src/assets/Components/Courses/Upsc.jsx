@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { GraduationCap } from 'lucide-react';
@@ -8,6 +9,18 @@ const COOPER_FONT = { fontFamily: "'Cooper Black', 'Cooper Blk BT', serif" };
 const Upsc = () => {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>UPSC Civil Services Coaching in Madurai | Vendhan Academy</title>
+                <meta name="description" content="Prepare for UPSC CSE (IAS, IPS, IFS) with Vendhan Academy in Madurai. Details about exam pattern, prelims, mains, optionals, eligibility, and structured study plans." />
+                <meta name="keywords" content="UPSC coaching Madurai, IAS academy, civil service exam preparation, IAS IPS IFS coaching, UPSC pattern guide" />
+                <link rel="canonical" href="https://vendhanacademy.com/upsc" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/upsc" />
+                <meta property="og:title" content="UPSC Civil Services Coaching in Madurai | Vendhan Academy" />
+                <meta property="og:description" content="In-depth roadmap and expert classroom guidance for clearing the UPSC Civil Services Examination." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* ── Hero Banner ── */}

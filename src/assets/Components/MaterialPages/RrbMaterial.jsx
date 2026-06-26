@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { BookOpen, Clock } from 'lucide-react';
@@ -9,6 +10,18 @@ const GOLD = '#da9100';
 const RrbMaterial = () => {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
+            <Helmet>
+                <title>RRB Railway Exam Study Materials | Vendhan Academy</title>
+                <meta name="description" content="Download syllabus guides, reference books, solved model test papers, and free study materials for RRB NTPC, ALP, JE, and Group D examinations." />
+                <meta name="keywords" content="RRB railway study materials, RRB NTPC notes pdf, download RRB ALP papers, railway exam prep" />
+                <link rel="canonical" href="https://vendhanacademy.com/rrb-material" />
+                
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://vendhanacademy.com/rrb-material" />
+                <meta property="og:title" content="RRB Railway Exam Study Materials | Vendhan Academy" />
+                <meta property="og:description" content="Access free educational resources and syllabus files for cracking various Railway Recruitment Board examinations." />
+                <meta property="og:image" content="https://vendhanacademy.com/src/assets/Images/Vendan%20logo.jpeg" />
+            </Helmet>
             <Navbar />
 
             {/* Hero Banner */}
