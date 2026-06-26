@@ -48,7 +48,7 @@ const Why_vendhan = () => {
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300"
+                            className={`bg-gray-50 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-all duration-300 hover:-translate-y-1 animate-fade-in-up delay-${(index + 1) * 100}`}
                         >
                             {/* Icon */}
                             <div className="w-12 h-12 rounded-lg bg-red-600 text-white flex items-center justify-center mb-4">

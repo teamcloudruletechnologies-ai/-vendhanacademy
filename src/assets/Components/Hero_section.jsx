@@ -38,22 +38,22 @@ const HeroSection = () => {
     return (
         <div className="relative overflow-hidden bg-white">
             {/* Decorative background elements using theme colors: red, green, white */}
-            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] rounded-full bg-red-50/60 blur-3xl opacity-60"></div>
-            <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-green-50/60 blur-3xl opacity-60"></div>
-            <div className="absolute top-1/2 left-0 w-[500px] h-[500px] -translate-y-1/2 -translate-x-1/2 rounded-full bg-red-50/40 blur-3xl"></div>
+            <div className="absolute top-0 right-0 -mr-20 -mt-20 w-[600px] h-[600px] rounded-full bg-red-50/60 blur-3xl opacity-60 animate-float"></div>
+            <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-green-50/60 blur-3xl opacity-60 animate-float delay-300"></div>
+            <div className="absolute top-1/2 left-0 w-[500px] h-[500px] -translate-y-1/2 -translate-x-1/2 rounded-full bg-red-50/40 blur-3xl animate-float delay-500"></div>
 
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center pt-24 pb-6 md:pt-32 md:pb-8 lg:pt-36 lg:pb-10 lg:gap-16">
 
                     {/* Left Side: Image */}
-                    <div className="w-full lg:w-1/2 flex justify-center lg:justify-start mb-10 lg:mb-0">
+                    <div className="w-full lg:w-1/2 flex justify-center lg:justify-start mb-10 lg:mb-0 animate-fade-in">
                         <div className="relative w-full max-w-[600px] lg:max-w-none">
                             {/* Decorative border accent */}
                             <div className="absolute -inset-1 bg-gradient-to-br from-red-500 via-white to-green-500 rounded-2xl sm:rounded-3xl opacity-30 blur-sm"></div>
                             <img
                                 src={mainImg}
                                 alt="Vendhan Academy - Preparing aspirants for success"
-                                className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[400px] object-cover rounded-2xl sm:rounded-3xl shadow-xl"
+                                className="relative w-full h-[250px] sm:h-[320px] md:h-[380px] lg:h-[400px] object-cover rounded-2xl sm:rounded-3xl shadow-xl hover:scale-[1.02] transition-transform duration-500"
                             />
                         </div>
                     </div>
@@ -62,13 +62,13 @@ const HeroSection = () => {
                     <div className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left">
 
                         {/* Heading */}
-                        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-gray-900 tracking-tight mb-6 leading-tight" style={{ fontFamily: "'Cooper Black', 'Cooper Blk BT', serif" }}>
+                        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-gray-900 tracking-tight mb-6 leading-tight animate-fade-in-up" style={{ fontFamily: "'Cooper Black', 'Cooper Blk BT', serif" }}>
                             <span className="block text-red-600 drop-shadow-sm">VENDHAN</span>
                             <span className="block text-green-600 mt-1 drop-shadow-sm">GROUP OF INSTITUTIONS</span>
                         </h1>
 
                         {/* Tagline */}
-                        <div className="relative">
+                        <div className="relative animate-fade-in-up delay-200">
                             <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-red-500 to-green-500 rounded-full hidden lg:block"></div>
                             <p className="text-base sm:text-lg md:text-xl text-gray-600 font-medium leading-relaxed max-w-2xl lg:pl-6">
                                 Vendhan group of institution has emerged as a leading institution in Madurai, dedicated to preparing aspirants for central and state government competitive examinations.
